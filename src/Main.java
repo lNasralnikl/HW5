@@ -29,7 +29,7 @@ public class Main {
         System.out.println("Задача 5");
         System.out.println("Высокосными годами являются: ");
         for (int i = 1904; i < 2097; i += 4) {
-            if (i % 100 != 0) {
+            if (i % 100 != 0 || i%400 == 0) {
                 System.out.print(i + ", ");
             }
         }
